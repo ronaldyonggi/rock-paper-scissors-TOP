@@ -65,4 +65,18 @@ function game() {
 }
 
 // game()
-game()
+
+const rockButton = document.getElementById('rock')
+rockButton.addEventListener('click', () => {
+  console.log(playRound('rock', getComputerChoice()))
+})
+
+const paperButton = document.getElementById('paper')
+paperButton.addEventListener('click', () => {
+  console.log(playRound('paper', getComputerChoice()))
+})
+
+const scissorsButton = document.getElementById('scissors')
+scissorsButton.addEventListener('click', () => {
+  console.log(playRound('scissors', getComputerChoice()))
+})
